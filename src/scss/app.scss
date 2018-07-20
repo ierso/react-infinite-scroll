@@ -1,0 +1,66 @@
+$backgroundColor: #EFEFEF;
+$bold: 700;
+$breakpoint: 575px;
+$font: 'Lato', sans-serif;
+$reg: 400;
+
+body {
+  margin: 0;
+}
+.app {
+  padding: 2em 0;
+  background: $backgroundColor;
+}
+  .app__wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+  }
+    .app__title {
+      margin: 0;
+      font-family: $font;
+      font-weight: $bold;
+    }
+    .message {
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      background: #FFFFFF;
+      box-shadow: 2px 3px 8px 0 rgba(0,0,0,0.08);
+      margin: 2em 0;
+      padding: 2em;
+      @media (min-width: $breakpoint) {
+        flex-flow: row;
+      }
+    }
+      .message__info {
+        margin-top: 2em;
+        @media (min-width: $breakpoint) {
+          margin-top: 0;
+        }
+      }
+        .message__img {
+          width: 100px;
+          height: 100px;
+          margin-right: 0;
+          @media (min-width: $breakpoint) {
+            margin-right: 2em;
+          }
+          img {
+            max-width: 100px;
+            border-radius: 5em;
+          }
+        }
+        .message__name {
+          font-family: $font;
+          font-weight: $bold;
+          margin: 0;
+        }
+        .message__content {
+          font-family: $font;
+          font-weight: $reg;
+          line-height: 1.35em;
+        }
+.o-loading {
+  padding: 1em 0;
+}
